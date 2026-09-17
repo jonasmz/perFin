@@ -6,13 +6,13 @@
 
 El dominio debe permitir conocer con bajo esfuerzo:
 
-- dinero disponible;
 - gastos del período;
-- obligaciones pendientes;
+- qué gastos fueron pagados y cuáles siguen pendientes de pago;
+- obligaciones pendientes y vencidas;
 - compromisos futuros por cuotas;
 - deuda y pagos estimados por tarjeta y mes;
 - origen de los ingresos;
-- movimientos reales de cada cuenta.
+- movimientos reales registrados.
 
 ## 2. Cuenta
 
@@ -34,7 +34,7 @@ Atributos conceptuales mínimos:
 - Tipo
 - Activa
 
-El saldo debe derivarse de la carga inicial y las operaciones posteriores.
+La cuenta conserva los efectos necesarios para registrar correctamente operaciones y reconstruir su historial. La visualización de dinero disponible o saldo actual no constituye un objetivo funcional de V1.
 
 ## 3. Tarjeta
 
@@ -180,7 +180,9 @@ Una regla genera obligaciones concretas. La regla no es una deuda por sí misma.
 
 ## 9. Obligación
 
-Representa un compromiso concreto a pagar.
+Representa un gasto comprometido concreto que puede estar pendiente, parcialmente pagado, pagado o vencido.
+
+Es la entidad que permite responder una necesidad central de V1: distinguir qué gastos ya fueron pagados y cuáles todavía deben pagarse.
 
 Atributos conceptuales:
 
