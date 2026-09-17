@@ -196,17 +196,21 @@
 
 ---
 
-## UC-18 Consultar saldos
+## UC-18 Consultar gastos pagados y pendientes
 
-**Objetivo:** conocer saldo de cuentas y deuda actual de tarjetas.
+**Objetivo:** conocer qué gastos comprometidos ya fueron pagados y cuáles todavía requieren pago.
 
-**Resultado:** saldos reconstruidos desde cargas iniciales y movimientos.
+**Datos:** período y filtros opcionales.
+
+**Resultado:** lista de gastos/obligaciones con estado `PENDIENTE`, `PARCIAL`, `PAGADA` o `VENCIDA`.
+
+**Reglas:** un egreso directo registrado representa un gasto ya realizado; el seguimiento de pago pendiente corresponde a gastos representados mediante obligaciones.
 
 ---
 
 ## UC-19 Consultar obligaciones
 
-**Objetivo:** conocer compromisos pendientes, parciales, pagados y vencidos.
+**Objetivo:** conocer el detalle de compromisos pendientes, parciales, pagados y vencidos, incluyendo qué conceptos ya fueron pagados y cuáles no.
 
 **Datos:** período/filtros opcionales.
 
