@@ -27,8 +27,8 @@ La matriz conecta casos de uso, requisitos, entidades/reglas del dominio y futur
 | UC-15 Registrar cargo tarjeta | RF-34, RF-35, RF-36 | Movimiento, Tarjeta, Concepto | 012-card-charges |
 | UC-16 Pagar tarjeta | RF-26, RF-27 | Movimiento, Cuenta, Tarjeta, ImpactoCuenta | 013-card-payments |
 | UC-17 Devolución/reintegro | RF-37 a RF-41 | Movimiento, Cuenta, Concepto | 014-refunds |
-| UC-18 Consultar saldos | RF-50 | Cuenta, ImpactoCuenta | 015-queries-dashboard |
-| UC-19 Consultar obligaciones | RF-51 | Obligacion | 015-queries-dashboard |
+| UC-18 Consultar gastos pagados y pendientes | RF-21, RF-21A, RF-50 | Obligacion, Movimiento, Concepto | 015-queries-dashboard |
+| UC-19 Consultar obligaciones | RF-20, RF-21, RF-21A, RF-51 | Obligacion, Movimiento, Concepto | 015-queries-dashboard |
 | UC-20 Consultar gastos | RF-52 | Movimiento, Concepto | 015-queries-dashboard |
 | UC-21 Consultar ingresos | RF-53 | Movimiento, Concepto | 015-queries-dashboard |
 | UC-22 Importar extracto | RF-42, RF-43, RF-44 | Importacion, MovimientoImportado | 016-imports |
