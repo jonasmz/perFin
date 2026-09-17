@@ -4,12 +4,12 @@
 
 ## 1. Requisitos funcionales
 
-### Cuentas y saldos
+### Cuentas y carga inicial
 
 - **RF-01** El sistema debe permitir administrar cuentas de tipo banco, efectivo, billetera virtual y tarjeta de crédito.
 - **RF-02** Debe permitir registrar una carga inicial para una cuenta de activo o una deuda inicial de tarjeta.
 - **RF-03** La carga inicial no debe contabilizarse como ingreso ni gasto.
-- **RF-04** El saldo de una cuenta debe poder reconstruirse desde cargas iniciales y movimientos posteriores.
+- **RF-04** El historial y los efectos de una cuenta deben poder reconstruirse desde cargas iniciales y movimientos posteriores.
 
 ### Conceptos
 
@@ -39,6 +39,7 @@
 - **RF-19** Debe ser posible pagar una obligación total o parcialmente.
 - **RF-20** El estado de una obligación debe derivarse de monto, pagos y vencimiento.
 - **RF-21** Los estados funcionales deben contemplar pendiente, parcial, pagada y vencida.
+- **RF-21A** El sistema debe permitir consultar claramente qué gastos comprometidos fueron pagados y cuáles permanecen pendientes de pago.
 
 ### Tarjetas
 
@@ -85,7 +86,7 @@
 
 ### Consultas
 
-- **RF-50** El sistema debe mostrar saldos actuales por cuenta.
+- **RF-50** El sistema debe mostrar gastos comprometidos distinguiendo pagados, pendientes, parciales y vencidos.
 - **RF-51** Debe mostrar obligaciones pendientes y vencimientos próximos.
 - **RF-52** Debe permitir consultar gastos por período y concepto.
 - **RF-53** Debe permitir consultar ingresos por período y concepto.
